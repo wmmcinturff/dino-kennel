@@ -1,5 +1,7 @@
 # Dino Kennel
 
+## **NOTE:** You cannot start coding until your project board and tickets have been approved by an instructor
+
 ## Description
 This project showcases all the vanilla javascript we learned in the foundations milestones.  It is designed to be a record keeping application for a dinosaur kennel.
 
