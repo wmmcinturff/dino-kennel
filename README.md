@@ -13,6 +13,13 @@ This project showcases all the vanilla javascript we learned in the foundations 
 - Dinos can be petted
 - Dinos can be sent on an adventure
 
+## Technical Requirements
+* You must use [Boostrap](https://getbootstrap.com/) to style your page components.
+* Your JS file should be comprised of functions, no actions should happen in your code outside of a function
+* Your HTML and JS should all have proper indentations
+* You should be using ES6 modules
+* Your JS code should be formatted correctly!
+
 ## Screenshots
 ### Full Page view
 ![Main View](./screenshots/main.png)
