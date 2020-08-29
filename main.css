@@ -30,10 +30,25 @@
        display: flex;
        flex-wrap: wrap;
        justify-content: space-around;
+      
    }
 
+   .dino_card {
+       border: solid black 2px;
+       border-radius: 10px;
+       background-color: antiquewhite;
+       
+   }
+
+   .card-title {
+       text-align: center;
+       background-color: whitesmoke;
+       border: solid gray 1px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: large;
+   }
    #dino-graveyard {
-        background-color: lightgrey;
+        background-color: gray;
    }
 
    #dino-hospital {

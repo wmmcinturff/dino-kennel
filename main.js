@@ -33,7 +33,7 @@ const dinoArray = [
 
     {
         image: "./assets/dino-image/Edmontosaurus.jpg",
-        name: "Edmund",
+        name: "Edmond",
         type: "Edmontosaurus",
         age: 98,
         owner: "Wanda",
@@ -87,13 +87,15 @@ const buildDinoForm = () => { $("#dino-form").html( `
         $("#dino-kennel").html(""); 
         dinoArray.forEach((dino) => {
             $("#dino-kennel").append(
-            `<div class="card" style="width: 18rem;">
+            `<div class="dino_card" style="width: 18rem;">
             <div class="card-body">
             <img class="card-img-top" src=${dino.image} alt=${dino.name}>
             <p class="card-title">${dino.name}</p>
-            <p class="owner">${dino.type}</p>
-            <p class="owner">${dino.owner}</p>
-            <p class="age">${dino.age}</p>
+            <button type="button" class="btn btn-primary">Profile</button>
+            <button type="button" class="btn btn-success">Pet Me!</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-warning">Adventure Time!</button>
+            <button type="button" class="btn btn-info">Feed Me!</button>
             </div>
            </div>`
            ) });
@@ -101,6 +103,6 @@ const buildDinoForm = () => { $("#dino-form").html( `
     }
    
 buildDinoKennel();
-  
+
 
  
