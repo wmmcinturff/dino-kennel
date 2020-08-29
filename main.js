@@ -87,13 +87,10 @@ const buildDinoForm = () => { $("#dino-form").html( `
         $("#dino-kennel").html(""); 
         dinoArray.forEach((dino) => {
             $("#dino-kennel").append(
-            `<div class="card" style="width: 18rem;">
+            `<div class="dino_card" style="width: 18rem;">
             <div class="card-body">
             <img class="card-img-top" src=${dino.image} alt=${dino.name}>
             <p class="card-title">${dino.name}</p>
-            <p class="owner">${dino.type}</p>
-            <p class="owner">${dino.owner}</p>
-            <p class="age">${dino.age}</p>
             </div>
            </div>`
            ) });
@@ -101,6 +98,6 @@ const buildDinoForm = () => { $("#dino-form").html( `
     }
    
 buildDinoKennel();
-  
+
 
  

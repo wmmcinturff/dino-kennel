@@ -30,10 +30,11 @@
        display: flex;
        flex-wrap: wrap;
        justify-content: space-around;
+      
    }
 
    #dino-graveyard {
-        background-color: lightgrey;
+        background-color: gray;
    }
 
    #dino-hospital {
