@@ -24,7 +24,7 @@ const dinoArray = [
     },
 
     {
-        image: "./assets/dino-image/brachiosaurus.jpg",
+        image: "./assets/dino-image/brachiosaurus.png",
         name: "Brock",
         type: "Brachiosaurus",
         age: 123,
@@ -57,9 +57,6 @@ const dinoArray = [
     },
 ];
 
-
-
-
 const buildDinoForm = () => { $("#dino-form").html( `
      <form>
       <div class="form-group">
@@ -84,21 +81,26 @@ const buildDinoForm = () => { $("#dino-form").html( `
 };
      
   buildDinoForm();
-
-  //const addDino = 
-
-
-  //let buildDinoCards = (dinoArray) => {
-        // for (let i = 0; i < dinoArray.length; i++) {
-    //  domString += `<div class="card" style="width: 18rem;" id="${i}">
-                   //   <div class="card-body"id="${i}">
-                     //   <h5 class="card-title">${dinoArray[i].name}</h5>
-                      //  <img class="dino-pic">${dinoArray[i].image}</img>
-                      //  </div>
-                 //   </div>`;
-   // }
-     // printToDom("dino-kennel", domString);
-
+             
+               
+ const buildDinoKennel = () => {
+        $("#dino-kennel").html(""); 
+        dinoArray.forEach((dino) => {
+            $("#dino-kennel").append(
+            `<div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <img class="card-img-top" src=${dino.image} alt=${dino.name}>
+            <p class="card-title">${dino.name}</p>
+            <p class="owner">${dino.type}</p>
+            <p class="owner">${dino.owner}</p>
+            <p class="age">${dino.age}</p>
+            </div>
+           </div>`
+           ) });
+       
+    }
+   
+buildDinoKennel();
   
-//}
-   // buildDinoCards();
+
+ 
