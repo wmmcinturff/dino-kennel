@@ -25,4 +25,14 @@
         font-size: 20px;
     }
 
-   
+   #dino-kennel {
+       background-color: greenyellow;
+   }
+
+   #dino-graveyard {
+        background-color: lightgrey;
+   }
+
+   #dino-hospital {
+        background-color: burlywood;
+   }

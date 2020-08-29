@@ -1,6 +1,6 @@
 const dinoArray = [
     {
-        image: "./dino-image/Albertosaurus.jpg",
+        image: "./assets/dino-image/Albertosaurus.jpg",
         name: "Albie",
         type: "Albertosaurus",
         age: 76,
@@ -8,7 +8,7 @@ const dinoArray = [
     },
 
     {
-        image: "./dino-image/Ankylosaurus.jpg",
+        image: "./assets/dino-image/Ankylosaurus.jpg",
         name: "Angie",
         type: "Ankylosaurus",
         age: 92,
@@ -16,7 +16,7 @@ const dinoArray = [
     },
 
     {
-        image: "./dino-image/Archaeopteryx.jpg",
+        image: "./assets/dino-image/Archaeopteryx.jpg",
         name: "Archie",
         type: "Archaeopteryx",
         age: 67,
@@ -24,7 +24,7 @@ const dinoArray = [
     },
 
     {
-        image: "./dino-image/brachiosaurus.jpg",
+        image: "./assets/dino-image/brachiosaurus.jpg",
         name: "Brock",
         type: "Brachiosaurus",
         age: 123,
@@ -32,7 +32,7 @@ const dinoArray = [
     },
 
     {
-        image: "./dino-image/Edmontosaurus.jpg",
+        image: "./assets/dino-image/Edmontosaurus.jpg",
         name: "Edmund",
         type: "Edmontosaurus",
         age: 98,
@@ -41,7 +41,7 @@ const dinoArray = [
     },
 
     {
-        image: "./dino-image/Iguanodon.jpg",
+        image: "./assets/dino-image/Iguanodon.jpg",
         name: "Iggy",
         type: "Iguanodon",
         age: 57,
@@ -49,7 +49,7 @@ const dinoArray = [
     },
 
     {
-        image: "./dino-image/Pteranadon.jpg",
+        image: "./assets/dino-image/Pteranadon.jpg",
         name: "Pteri",
         type: "Pteranadon",
         age: 74,
@@ -58,40 +58,35 @@ const dinoArray = [
 ];
 
 
-const printToDom = (divId, textToPrint) => {
-    const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML = textToPrint;
-};  
 
 
-const buttonEvents = () => {
-    document.getElementById('dino-button').addEventListener('click', buildDinoForm);
-    document.getElementById('dino-form').addEventListener('click', addTheDino);
-    document.getElementById('dino-form').addEventListener('click', buildDinoCards);
-   
+const buildDinoForm = () => { $("#dino-form").html( `
+     <form>
+      <div class="form-group">
+      <label for="bear name">Dino Name</label>
+      <input type="text" class="form-control" id="dinoName" placeholder="Dino Bob">
+      </div>
+      <div class="form-group">
+      <label for="dino type">Type</label>
+      <input type="text" class="form-control" id="dinoType" placeholder="t-rex">
+      </div>
+      <div class="form-group">
+      <label for="dino type">Type</label>
+      <input type="text" class="form-control" id="dinoType" placeholder="t-rex">
+      </div>
+      <div class="form-group">
+      <label for="dino age">Type</label>
+      <input type="text" class="form-control" id="dinoAge" placeholder="55">
+      </div>
+      <button type="button" class="btn btn-primary" id="addDinoBtn">Add Your Dino</button>
+    </form>`
+);
 };
+   
+  
+  
+  buildDinoForm();
 
-const buildDinoForm = () => {
-    let domString = '';
-    domString += `<h2 class="text-center">Enter New Dino Sighting</h2>`;
-    domString +=  `<form class="form-inline justify-content-center"     id="whole-form">
-                    <div class="form-group mb-2">
-                   <input type="text" readonly class="form-control-plaintext" id="staticDino">
-                    </div>
-                   <div class="form-group mx-sm-3 mb-2">
-                   <label for="dinosName">Dino Name</label>
-                   <input type="text" class="form-control" id="inputDino" placeholder="Dino Bob">
-                    </div>
-                   <div class="form-group mb-2">
-                   <label for="exampleURL">URL</label>
-                   <input type="image" class="form-control" id="inputImage">
-                   </div>
-                    <button type="submit" class="btn btn-primary mb-2" id="form-btn">Add Dino</button>
-                   </form>`;
-  
-    printToDom("dino-Form", domString);
-  };
-  
   const addTheDino = (e) => {
     const target = e.target.id;
         const newDino = {
@@ -148,3 +143,5 @@ else {
   }
   };
   buttonEvents();
+
+  buildDinoForm();
