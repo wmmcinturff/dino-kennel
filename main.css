@@ -27,6 +27,9 @@
 
    #dino-kennel {
        background-color: greenyellow;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
    }
 
    #dino-graveyard {
