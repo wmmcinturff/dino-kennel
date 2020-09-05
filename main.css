@@ -17,6 +17,10 @@
         font-size: 20px;
     }
 
+    #dino-form {
+        background-color: skyblue;
+        
+    }
     .dino-add {
         background-color: white;
         text-align: center;
@@ -39,7 +43,6 @@
        background-color: antiquewhite;
        
    }
-
    .card-title {
        text-align: center;
        background-color: whitesmoke;
