@@ -57,32 +57,11 @@ const dinoArray = [
     },
 ];
 
-const buildDinoForm = () => { $("#dino-form").html( `
-     <form>
-      <div class="form-group">
-      <label for="bear name">Dino Name</label>
-      <input type="text" class="form-control" id="dinoName" placeholder="Dino Bob">
-      </div>
-      <div class="form-group">
-      <label for="dino type">Type</label>
-      <input type="text" class="form-control" id="dinoType" placeholder="t-rex">
-      </div>
-      <div class="form-group">
-      <label for="dino age">Age</label>
-      <input type="text" class="form-control" id="dinoAge" placeholder="55">
-      </div>
-      <div class="form-group">
-      <label for="dino owner">Owner</label>
-      <input type="text" class="form-control" id="dinoOwner" placeholder="Bob">
-      </div>
-      <button type="button" class="btn btn-primary" id="addDinoBtn">Add Your Dino</button>
-    </form>`
-);
-};
-     
-  buildDinoForm();
-             
-               
+
+
+ 
+
+  
  const buildDinoKennel = () => {
         $("#dino-kennel").html(""); 
         dinoArray.forEach((dino) => {
@@ -91,6 +70,9 @@ const buildDinoForm = () => { $("#dino-form").html( `
             <div class="card-body">
             <img class="card-img-top" src=${dino.image} alt=${dino.name}>
             <p class="card-title">${dino.name}</p>
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            </div>
             <button type="button" class="btn btn-primary">Profile</button>
             <button type="button" class="btn btn-success">Pet Me!</button>
             <button type="button" class="btn btn-danger">Delete</button>
@@ -105,4 +87,8 @@ const buildDinoForm = () => { $("#dino-form").html( `
 buildDinoKennel();
 
 
- 
+ const init = () => {
+     buildDinoForm();
+     buildDinoKennel();
+ }
+ init();
