@@ -1,3 +1,6 @@
+$("#dino-button").click(function(){
+    $("#dino-form").toggle();
+});
 const buildDinoForm = () => { 
     $("#dino-form").html( `
      <form>

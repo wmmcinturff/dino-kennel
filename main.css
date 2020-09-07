@@ -18,6 +18,7 @@
     }
 
     #dino-form {
+        display: none;
         background-color: skyblue;
         
     }
