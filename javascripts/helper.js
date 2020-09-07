@@ -54,6 +54,14 @@ let dinoArray = [    {
     age: 74,
     owner: "Wanda",
 },
+{
+    image: "./assets/dino-image/Monolophosaurus.jpg",
+    name: "Monica",
+    type: "Monolophosaurus",
+    age: 113,
+    owner: "Wanda",
+},
 ];
+
 
 export { dinoArray };

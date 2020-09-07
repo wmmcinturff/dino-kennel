@@ -4,7 +4,7 @@ import { buildDinoCard } from './dinocard.js';
 const addDinoToForm = () => {
     $("#addDinoBtn").click(() => {
       let newDino = {};
-      newDino.name = $("dinoName").val();
+      newDino.name = $("#dinoName").val();
       newDino.image = $("#dinoImage").val();
       newDino.owner = $("#dinoOwner").val();
       newDino.type = $("#dinoType").val();
@@ -17,7 +17,7 @@ const addDinoToForm = () => {
     };
 
     const clearForm = () => {
-        $("dinoName").val('');
+        $("#dinoName").val('');
         $("#dinoImage").val('');
         $("#dinoOwner").val('');
         $("#dinoType").val('');

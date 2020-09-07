@@ -9,25 +9,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 60px;
     }
-
-    .lead {
-        text-align: center;
-        color: firebrick;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
-    }
-
+   
     #dino-form {
-        display: none;
-        background-color: skyblue;
+    display: none;
+    background-color: rgb(238, 108, 33);
+    font-weight: bold;
         
-    }
-    .dino-add {
-        background-color: white;
-        text-align: center;
-        color: darkgoldenrod;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
     }
 
    #dino-kennel {
@@ -57,4 +44,13 @@
 
    #dino-hospital {
         background-color: burlywood;
+   }
+
+   #dino-button {
+       display: flex;
+       justify-content: center;
+       background-color: white;
+       color: darkgoldenrod;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 20px;
    }
