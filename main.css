@@ -1,0 +1,60 @@
+.jumbotron {
+    background-image: url("./assets/jumboimg/ancientrainforest.jpg");
+    background-repeat: no-repeat;
+}
+
+.display-4 {
+    text-align: center;
+    color: firebrick;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    }
+
+    .lead {
+        text-align: center;
+        color: firebrick;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+
+    #dino-form {
+        display: none;
+        background-color: skyblue;
+        
+    }
+    .dino-add {
+        background-color: white;
+        text-align: center;
+        color: darkgoldenrod;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+
+   #dino-kennel {
+       background-color: greenyellow;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+      
+   }
+
+   .dino_card {
+       border: solid black 2px;
+       border-radius: 10px;
+       background-color: antiquewhite;
+       
+   }
+   .card-title {
+       text-align: center;
+       background-color: whitesmoke;
+       border: solid gray 1px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: large;
+   }
+   #dino-graveyard {
+        background-color: gray;
+   }
+
+   #dino-hospital {
+        background-color: burlywood;
+   }
