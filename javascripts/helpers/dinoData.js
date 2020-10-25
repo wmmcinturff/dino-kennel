@@ -144,5 +144,4 @@ const adventureArray = [
     return dinoArray;
 };
 
-
-  export { dinoArray, adventureArray, getDinosaurs };
+export { dinoArray, adventureArray, getDinosaurs };
