@@ -1,4 +1,4 @@
-import { dinoArray } from '../helper.js';
+import { dinoArray } from '../helpers/dinoData.js';
 import { buildDinoCard } from './dinocard.js';
 
 const addDinoToForm = () => {
